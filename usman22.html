@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Selectors &more designing</title>
+    <style>
+         body{
+         background-image:url(1209562.jpg);
+        }
+        .container {
+            border: 3px solid purple;
+            color: rgb(0, 0, 0);
+            background-color: #4169e1b3;
+            width: 666px;
+            height: 500px;
+            margin: auto;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(33, 33, 231);
+            /*just for practice but we set whilte color in button*/
+        }
+
+        /* when cursor on button so color appear */
+        a:hover {
+            color: black;
+            background-color: white;
+            /* border:3px solid black; */
+        }
+
+        /* a:visited {
+            background-color: rgb(247, 171, 8);
+        } */
+
+        a:active {
+            /* when you click right mouse button on university so show parrot color */
+            background-color: rgb(3, 226, 33);
+            color:white;
+        }
+
+        button:hover {
+            color: black;
+            background-color: white;
+        }
+        button:visited
+        {
+            background-color: coral;
+        }
+
+        .button {
+            /* border: 3px solid purple; */
+            color: white; 
+             background-color: #775d55c4;
+            font-weight:bold;
+            border: none;
+            border-radius: 40px;
+            ;
+            padding: 10px;
+            margin-top: 32px;
+            margin-left: 32px;
+            cursor: pointer;
+            font-size: 16px;
+            /* height: 35px;
+            width: 107px; */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h3>Muawa Profile</h3>
+        <p id="designer">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid porro veritatis aspernatur reiciendis
+            delectus. Possimus odio repellat sunt minima beatae amet magnam quos iste nulla eaque vero nobis doloribus,
+            tempora vitae dolores. Voluptatem, iste minus? Nobis omnis quibusdam libero, aut odio voluptate sed est
+            accusamus consequuntur error, nesciunt deleniti quam labore minus, deserunt eveniet quas odit asperiores!
+            Sit tenetur minus odit autem! Quam, repudiandae amet. Excepturi iste tenetur deserunt soluta, suscipit quas
+            repellat eaque enim voluptas quia veniam. Vero atque doloremque inventore placeat quam accusantium
+            repudiandae amet! Enim praesentium tempora quisquam. Officia mollitia aut quaerat perferendis nulla
+            cupiditate, ex aliquam?
+            <br>
+            <a href="https://www.ucp.edu.pk/" class="button">University </a>
+            <button class="button">Contact us</button>
+        </p>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js Events</title>
+    <!-- Events matlab kuch howa like submit ka button click kia to kuch howa ha -->
+    <!-- There are alot of events but some of them here -->
+    <!-- 1.Browser Events
+      2.Click
+      3.ContextMenu
+      4.MouseOver/mouseout
+      5.mousedown/mouseup
+      6.moiusemove
+      
+      form events
+      1.submit
+      2.Focus
+      3.Dom contentloaded
+      4.transitioned-->
+    <style>
+        #btn {
+            border: 2px solid black;
+            color: white;
+            background-color: red;
+            padding: 5px;
+            font-weight: bold;
+            /* border-radius: 10px;; */
+            cursor: pointer;
+        }
+
+        #btn:hover {
+            padding: 6px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Javascript Events</h1>
+        <p id="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem facere quam eveniet fugit modi
+            nostrum culpa
+            maiores nobis dolorum, veniam quas enim doloremque architecto optio ratione, suscipit, amet esse eos
+            possimus dolore! Nemo perspiciatis illum veritatis sint consectetur hic quis quasi voluptatem soluta ad,
+            optio nulla nostrum voluptatum similique quisquam voluptas aut sed! Voluptates, harum sunt praesentium illo
+            est ipsum nisi minima itaque deleniti saepe sed, aliquid eum id, magni eligendi fuga temporibus eos.
+            perspiciatis ex iusto a!</p>
+    </div>
+    <button id="btn" onclick="HideData()">Show/Hide</button>
+    <script>
+
+
+        let paragraph = document.getElementById('para');
+        paragraph.addEventListener('mouseover', function run() {
+            //    alert("Inside Mouse");
+            console.log("Inside");
+        }
+        )
+        paragraph.addEventListener('mouseout', function run() {
+            //    alert("Inside Mouse");
+            console.log("Outside");
+        }
+        )
+
+        paragraph.addEventListener('mouseup',function run()
+        {
+            console.log("MouseUp");
+        })
+        // Click Event
+        function HideData() {
+            let button = document.getElementById('btn');
+            let paragraph = document.getElementById('para');
+            // paragraph.style.display='none';
+            paragraph.style.color='red';
+            if (paragraph.style.display == 'none') {
+                paragraph.style.display = 'block';
+            }
+            else {
+                paragraph.style.display = 'none';
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>

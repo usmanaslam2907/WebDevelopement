@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after Pseudo Selectors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <style>
+        body {
+            /*  important baat jab ham orange color ka border deke toh us ka matlab wo paddin ya margin ha */
+            padding: 0;
+            margin: 0;
+            color: white;
+            /* unplash source website for get photos */
+            /* background-image: url("nature.jpg");
+            background-repeat: no-repeat;
+           background-size: 2000px; */
+            /* background: url("fin.jpg") no-repeat center center/cover; */
+            /* background-color: rgba(0, 0, 0, 0.438); */
+            background-color: black;
+        }
+
+        /* this is good technique remember */
+        header::before {
+            background: url('fin.jpg') no-repeat center center/cover;
+            content: "";
+            /*ya lazmi add karna ha*/
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.5;
+
+        }
+
+        /* header{
+       display:flex;/*row ma chala jae ga*/
+        /* flex-direction: column;/*flex direction change kare gein*/
+        .navigation {
+            /* isee sa elements row ma ajate haie */
+            display: flex;
+            font-size: 22px;
+            font-family: 'Bree Serif', serif;
+        }
+
+        li {
+            list-style: none;
+            padding: 6px 21px;
+            cursor: pointer;
+
+        }
+
+        li:hover {
+            color: red;
+        }
+
+        section {
+            font-family: 'Bree Serif', serif;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            margin: 0px 470px;
+
+            /* border: 2px solid red; */
+            /* flex box ma do cheze bari imp ha 1. align items 2. justify-content */
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        section::before {
+
+            content: "Muawa International Company";
+            cursor: pointer;
+
+        }
+
+        .right {
+            display: inline-block;
+            position: absolute;
+            right: 34px;
+            top: 10px;
+            
+
+
+
+        }
+
+        .right button {
+            padding: 0px 16px;
+            margin: 14px 54px;
+            font-size: 23px;
+            background-color:#8683e3c4;
+            /* border-radius:10px; */
+         
+
+        }
+        .right button:hover {
+          background-color:red;
+         
+
+        }
+        .right button a{
+       text-decoration: none;
+       color:white;
+      
+    
+        }
+
+        /* section:after{
+       content:"Muawa International Company"
+   } */
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">Services</li>
+                <li class="item">Contact</li>
+                <li class="item">About</li>
+            </ul>
+        </nav>
+
+        <div class="right">
+            <button><a href="">Tutorials</a></button>
+        </div>
+
+    </header>
+    <section>
+        <h1>Welcome to Muawa Coding World</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid veritatis ratione non incidunt.
+            Doloremque dolorem, quos provident ab at obcaecati pariatur, molestias totam voluptas consequatur nulla
+            nesciunt ipsa, dolor eius. Sed debitis itaque nobis a enim, eveniet minus magni animi!</p>
+    </section>
+
+</body>
+
+</html>

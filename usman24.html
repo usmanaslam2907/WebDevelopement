@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+    <style>
+        body{
+         background-image:url(1209562.jpg);
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* block element matlab pori jagah leta ha jabka inline sirf apni jgah leta ha */
+        /* Display BlocK: pora block la kar width la kar beth jae ga
+        Display Inline: Ya sirf itni jgah la ga jitni required ha */
+        header {
+            color:#a93939;
+            font-family: 'Style Script', cursive;
+            font-weight: bold;
+            font-size: 25px;
+            margin:5px auto;
+            margin-top:45px;
+            border: 0px solid black;
+            width: 15%;
+            ;
+
+        }
+        header:hover{
+            color:rgb(202, 37, 37);
+        }
+
+        img {
+            display: block;
+            /* image ko space mil jati move karne ki so ham block kare gein*/
+            margin: auto;
+            width: 114px;
+
+        }
+
+        h3 {
+
+            text-align: center;
+            /* dont need to kapney ki */
+            /* display:block;
+            margin:auto;
+         padding:10px;
+         padding-left:105px;
+          font-weight: bold; */
+        }
+        p{
+            color:#2a902a;
+        }
+
+        .box {
+
+            border: 2px solid black;
+            background-color: blanchedalmond;
+            padding: 50px;
+            margin:  7px 31px;
+            display: inline-block;
+            /* display: inline; just apni jgah lein geh or sath dusre dabbe ko ane dein gein
+            /* block means extra space inline means just apni space*/
+            width: 500px;
+            box-sizing: border-box;
+            cursor:pointer;
+        }
+        .Heading{
+            color:#bd2727;
+            text-align:center;
+            margin-bottom:20px;
+        }
+        .container{
+            margin:auto;
+        }
+        .box:hover{
+           background-color:#ff8d8d;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="top">
+        <img src="usmani.jpg" alt="Loading...">
+        <h3>Welcome to Muawa DSLR Camera</h3>
+    </header>
+    <div class="container">
+
+        <div class="box">
+
+            <h4 class="Heading">Services</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia assumenda dolorem dolor esse laudantium
+                illum facilis alias voluptatum eos odit, repellat velit error in perferendis numquam modi inventore
+                repellendus harum veniam placeat beatae quos doloribus. Rerum reiciendis odit unde iure!</p>
+
+        </div>
+        <div class="box">
+
+            <h4 class="Heading">Front-End Camera</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia assumenda dolorem dolor esse laudantium
+                illum facilis alias voluptatum eos odit, repellat velit error in perferendis numquam modi inventore
+                repellendus harum veniam placeat beatae quos doloribus. Rerum reiciendis odit unde iure!</p>
+
+        </div>
+        <div class="box">
+
+            <h4 class="Heading">Back-End Camera</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia assumenda dolorem dolor esse laudantium
+                illum facilis alias voluptatum eos odit, repellat velit error in perferendis numquam modi inventore
+                repellendus harum veniam placeat beatae quos doloribus. Rerum reiciendis odit unde iure!</p>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>

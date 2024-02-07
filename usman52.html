@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays and Objects</title>
+    <style>
+        body{
+            background-color: yellow;
+        }
+        div::before {
+            content: "";
+            background: url("pizza.jpg") no-repeat center center/cover;
+            width:100vw;
+            height:100vh;
+            position: absolute;
+            top:0;
+            left:0;
+            z-index: -1;
+            opacity:0.7;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">this is simple html</div>
+    <script>
+        // variables 
+        let muawa1 = 34;
+        let muawa2 = "string";
+        let muawa3 = true;
+        let muawa4 = null;
+        let muawa5 = undefined;
+
+        // Object maker
+        let Student = {
+            name: "Usman", RegNo: "L1F19BSSE0153", Semester1: 4,Semester12:5,
+        }
+        console.log(Student.Semester1);
+        console.log(Student['Semester12']);
+        console.log(Student);
+
+
+        //  Array Maker
+        // let Arrayy = [5,4,3,2,1,67,65, "Usman", undefined, null];
+         let Arrayy =new Array[5,4,3,2,1,67,65, "Usman", undefined, null];
+         let Arrayyy=new Array(10);
+        // console.log(Arrayy);
+        Arrayy=Arrayy.sort();
+        Arrayy.push("muawa");
+        console.log(Arrayy);
+        // console.log(Arrayy.length);
+
+
+    </script>
+</body>
+
+</html>

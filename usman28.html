@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <!-- Flexbox: 1 dimensional layout method for 
+    laying out items in row or columns. and best way to align items into a container flex+box -->
+    <style>
+        .container {
+            width: 100%;
+            height: 400px;
+            border: 2px solid black;
+
+            /* Initialize the container as flexbox */
+            display: flex;
+            /* Flex Properties for Flex Container */
+            /* flex-direction: row; */
+            /*by default value is row*/
+            /*row to already ha hi*/
+            /* flex-direction: column;
+            flex-direction: row-reverse; */
+            /* flex-direction: column-reverse; */
+
+
+            /*  by default no wrap but we do wrap wrap  adjust the container
+            when press reponsive button */
+            /* flex-wrap: wrap; */
+            /* flex-wrap:wrap-reverse; */
+
+            /* Short end keys easily like */
+            /* flex-flow: row wrap; */
+
+
+            /* justify-content:center;  sara container ka content center ma ajae ga */
+            /* justify-content:space-between;  bas daboo k darmian ma space ahi gi or khai nai */
+            /* justify-content:space-evenly;  daboo k darmiaan or bahir baraber space ahi gi */
+            /* justify-content:space-around;  /*daboo k left or right pr equal space ahi gi */
+            /*but center ma space zeda ho jae gi*/
+
+
+            /* how to vertical center box its a good thing important */
+            /* align-items: center; */
+            /* align-items:flex-start; by default */
+            /* align-items: flex-end;end pa chale jahe geh */
+            /* align-items: stretch;height neechey sa uper choti kare ga */
+
+        }
+
+        .items {
+            width: 200px;
+            height: 200px;
+            border: 1px solid green;
+            background-color: rgb(78, 20, 238);
+            margin: 10px;
+            padding: 3px;
+
+            /* Flex Properties for Flex item box*/
+        }
+
+        #item1 {
+            /* jis ka order zeda ho ga wo baad ma ahea ga container ma */
+            /* order: 40; */
+            /* flex grow width increase karta ha menas bara ho jata ha jab container ko bara karo */
+            
+            /* flex grow or shrink ka istamal tab pta chalta ha jab ham container
+            chota bara karte ya dono opposite ha grow width bari karta ha jitna grow zeda karo
+            or shrink width kaam karta ha jitni zeda do ya dono kaam container ko movements sa
+            pta chalta ha */
+            /* flex-grow:5;
+            flex-shrink:20; */
+            flex-basis:200px;
+        }
+
+        #item2 { 
+            /* flex-grow:5; */
+            /* when flex-direction is set to row flex-basis: will control width */
+            /* when flex-direction is set to column flex-basis: will control height */
+        flex-basis:100px;
+        
+        }
+
+        #item3 { 
+            /* flex: grow shrink basis */
+            flex:5 100 44px ;
+            /* order: 10; */
+            /* align-self: flex-start;
+            align-self: flex-end;
+            align-self: center; */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is FlexBox</h1>
+    <div class="container">
+        <!-- div.items#item$*6 -->
+        <div class="items" id="item1">First Box</div>
+        <div class="items" id="item2">Second Box</div>
+        <div class="items" id="item3"> Third Box</div>
+        <!-- <div class="items" id="item4">Fourth Box</div>
+        <div class="items" id="item5">Fifth Box</div>
+        <div class="items" id="item6">Sixth Box</div> -->
+
+
+
+    </div>
+
+</body>
+
+</html>

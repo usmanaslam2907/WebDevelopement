@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid template</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 0.5rem;
+            /* equal number rakne like 4 =4  equal column and row ak row ma equal column hone */
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer';
+
+        }
+
+        .item {
+            background-color: rgb(193, 224, 51);
+            border: 2px solid black;
+            padding:20px 12px;
+
+        }
+
+        #navbar {
+            grid-area: navbar;
+       
+        }
+
+        #section {
+            grid-area: section;
+        }
+
+        #aside {
+            grid-area: aside;
+            
+
+        }
+        footer{
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div id="navbar" class="item">Home Services About Contact</div>
+        <div id="section" class="item">Let, provident recusandae labore, iste inventore
+            voluptatem ipsum! Non exercitationem, ut sit tempora voluptas provident adipisci delectus maiores rem ad et
+            pardolore esse doloremque consequuntur corrupti nesciunt eius
+            possimus fugit, quis corporis error? Cumque modi magni ratione, aspernatur iusto numquam commodi? Quisquam,
+            incidunt? A, soluta provident! Excepturi consequuntur numquam hic reprehenderit, odio sunt dolores.</div>
+        <div id="aside" class="item">us provident quaerat? Excepturi velit placeat facilis
+            laboriosam, tempora eligendi repellat saepe cumque doloremque, aut ducimus cum rem consequatur magni
+            debitis, ipsum aliquid esse beatae alias repellendus corrupti minus consectetur. Aliquam, laudantium eveniet
+            maiores accusamus commodi expedita error dolorem! Consectetur dolore dolorum deleniti similique odit sit
+            minus voluptas eveniet consequatur ratione ipsa molestiae, quae perferendis nihil! Dicta cum laudantium
+            laborum deleniti ab! Dolores similique impedit rerum molestias nobis qui, illum animi tempore voluptate
+            molestiae nihil quo quia illo quaerat esse sunt expedita a natus libero deleniti accusamus quae unde odit!
+            Dolores earum optio quas maiores consequuntur quod aut consequatur. Cum eius libero beatae blanditiis
+            molestiae esse doloremque, sit sapiente cupiditate, quis, dolor porro voluptatem accusamus dolorem.
+            Reiciendis voluptatum, corrupti eius nobis voluptatibus quas?</div> 
+             <footer class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque dolor ipsa culpa aliquid, similique,
+            magnam obcaecati doloribus quisquam odit sequi labore cum voluptate explicabo! Quam sed at fugit beatae nisi
+            repellat pariatur expedita dolor adipisci cupiditate asperiores modi, magni facere molestias omnis quae
+            suscipit unde nulla perspiciatis blanditiis obcaecati. Voluptas!</footer>
+   
+      
+    </div>
+</body>
+
+</html>

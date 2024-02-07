@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muawa Fitness</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+<style>
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Bree Serif', serif;
+
+
+    }
+   header::before{
+       background:url("gym1.jpg") no-repeat center center/cover;
+        content:""; 
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        z-index:-1;
+        opacity: 0.8;
+        
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+
+    }
+
+    /* 1st method  */
+    .navbar li a:hover {
+        color: orange;
+        text-decoration: underline;
+    }
+
+    /* .navbar li a.active
+    {
+        color:red;
+        text-decoration: underline;
+    } */
+    /*2nd method */
+    /* .navbar li a:hover,navbar li a.active{
+        color: orange;
+        text-decoration:underline;
+      
+    } */
+
+    .navbar li {
+        display: inline-block;
+        font-size: 25px;
+
+    }
+
+    .left {
+        display: inline-block;
+        color: white;
+        background-color: brown;
+        position: absolute;
+        left: 34px;
+        top: 20px;
+    }
+
+    .mid {
+
+        color: white;
+        /* background-color: rgb(144, 184, 105); */
+        /* block islie kia kio k centre ma hame bhot space chaie*/
+        display: block;
+        width: 60%;
+        margin: 20px auto;
+
+        /* jab b kisi block ko center karna toh teen cheze karni hoti
+        1.display :block inline wagera
+        2.width set karni hoti
+        3.margin karna hota x pa auto karna */
+
+
+
+
+    }
+
+    .right {
+        display: inline-block;
+        /* block islie kia kio k centre ma hame bhot space chaie*/
+        color: white;
+        /* ak tariqa ya ha */
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        /* or dusra ya ha but ya tab implement ho ga jab display inline block nai ho ga*/
+        /* float: right;
+       top:0px; */
+    }
+
+    .left img {
+        /* filter:grayscale(); */
+        /* filter:invert(100); */
+        background-clip: red;
+        width: 100px;
+
+    }
+
+    .left div {
+        font-size: 18px;
+        background-color: #382d29cf;
+        text-align: center;
+        line-height: 30px;
+    }
+
+    .btn {
+        /* border:2px solid red; */
+        border-radius: 5px;
+        color: white;
+        background-color: #44403fb2;
+        margin: 4px 11px;
+        padding: 0px 5px;
+        font-size: 18px;
+        cursor: pointer;
+        font-family: 'Baloo Bhaina 2', cursive;
+    }
+
+    .btn:hover {
+        color: rgb(7, 7, 7);
+        background-color: rgb(255, 255, 255);
+    }
+
+    .container {
+        color: white;
+        font-weight: bold;
+        border: 1px solid rgb(255, 255, 255);
+        margin: 2px 2px;
+        margin: 103px auto;
+        padding: 10px 43px;
+        width: 35%;
+        height: 584px;
+        border-radius: 24px;
+
+    }
+
+    .form-group input {
+        text-align: center;
+        font-size: 18px;
+        display: block;
+        width: 501px;
+        padding: 8px;
+        margin: 25px -2px;
+        border: 2px solid #fd0d0d;
+        border-radius: 202px;
+        font-family: 'Baloo Bhaina 2', cursive;
+    }
+
+    .container h1 {
+        text-align: center;
+        color: rgb(255, 255, 255);
+    }
+
+    .container button {
+
+
+        /* jab b kisi block ko center karna toh teen cheze karni hoti
+        1.display :block inline wagera
+        2.width set karni hoti
+        3.margin karna hota x pa auto karna   submit ko centre karna ha*/
+        background-color: rgb(74, 143, 233);
+        color: white;
+        /* display: block;
+        width: 24%;
+        margin: auto; */
+        /* just for center*/
+
+    }
+
+    .container button a {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    .container button a:hover {
+        color: rgb(241, 7, 7);
+
+
+    }
+</style>
+
+<body>
+<header>
+    <div class="header">
+        <!-- left button for logo -->
+        <div class="left">
+            <div>
+                <img src="logo.jpg" alt="sorry">
+                <div>Muawa Fitness</div>
+            </div>
+        </div>
+        <!-- centre box for navigation -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Packages</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </div>
+        <!-- right box for button -->
+        <div class="right">
+            <button class="btn">Academics</button>
+            <button class="btn">Calendar</button>
+        </div>
+    </div>
+</header>
+    <div class="container">
+        <h1>Join Gym</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter Your CNIC">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter Your City">
+            </div>
+            <div>
+                <button class="btn"><a href="usman2.html">Sign Up</a></button>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+
+</html>

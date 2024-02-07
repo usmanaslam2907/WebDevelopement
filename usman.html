@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model and Upward</title>
+  
+    <style>
+         /* Universal Selector like set default values */
+         *{
+                box-sizing: border-box;
+                padding:0;
+                margin:0;
+             
+            }
+        .muawa {
+            color: red;
+            background-color:#e0ffd1;
+            border: 0px solid black;
+            border-radius: 40px;
+            
+           
+            /* padding: 20px; */
+            /* padding-top:50px; */
+            /* padding-right:500px; */
+            /* padding-bottom:20px; */
+            /* padding-left:20px; */
+            padding:20px 30px 20px 50px;  /*top  right bottom left*/
+            /* padding: 20px 40px;  /* padding:(y(top/bottom)  x(left/right)); */
+            /*  Same for Margins */
+            /* Margin:20px; */
+            /* margin-top:50px; 
+            margin-right:500px; 
+             margin-bottom:20px;
+           margin-left:20px; */
+           margin: 20px 20px 30px 0px; 
+            /* margin: 20px 40px;   /* margin:(y(top/bottom)  x(left/right)); */
+
+            width:1000px;
+            font-family:sans-serif; 
+
+            /* Important to adjust Width */
+            box-sizing: border-box;
+        }
+        body
+        {
+            background-color:#ff3c3c;
+        }
+
+
+        /* practice */
+        .isback{
+            color:red;
+            background-color:#f79fff;
+            border:0px solid #65ff0f;
+            border-radius:20px;
+            margin-left:4.6in;
+            margin-bottom:1in;
+            width:10px;
+            padding:10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <span class="isback">This is paragraph 1</span>
+        <p class="muawa">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, non dicta placeat nesciunt
+            doloribus natus
+            minima corrupti, error excepturi sunt optio reprehenderit vero consequuntur itaque quisquam sapiente quod
+            fugit
+            repellendus!</p>
+
+        <span class="isback">This is paragraph 2</span>
+        <p class="muawa">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, non dicta placeat nesciunt
+            doloribus natus
+            minima corrupti, error excepturi sunt optio reprehenderit vero consequuntur itaque quisquam sapiente quod
+            fugit
+            repellendus!</p>
+
+        <span class="isback">This is paragraph 3</span>
+        <p class="muawa">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, non dicta placeat nesciunt
+            doloribus natus
+            minima corrupti, error excepturi sunt optio reprehenderit vero consequuntur itaque quisquam sapiente quod
+            fugit
+            repellendus!</p>
+    </div>
+
+
+
+
+</body>
+
+</html>

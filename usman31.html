@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selectors</title>
+    <style>
+        h1 {
+            color: black;
+            background-color: red;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* beshak jitni b depth ma p
+         ho ga effect kare ga ya i.e 10 div ka andar b p ho to b effect kare ga */
+        /* when we use div p li so not effect  zarori nai direct link ho*/
+        /* div  li p{
+            color: yellow;
+            background-color: green;
+            font-weight: bold;
+
+        } */
+        /* direct access child p  matlb direct div ka baad child p ahe to lago ho ga */
+        /* parent>child   direct link  magr is ma zaroori ha direct link ho */
+        /* div>p {
+            color: yellow;
+            background-color: green;
+            font-weight: bold;
+
+        } */
+        /* jis ka pichla sibling div ha */
+        /* ya tab lago ho gi
+        <div>
+
+        </div>
+        <p>
+            this is applicable
+        </p>
+             so ab p pr lago ho gi p is after div  */
+        div+p {
+            color: white;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is more selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li>
+                    <p>this para under list</p>
+                </li>
+                <li>this para underrr list</li>
+                <!--is par style lagoo nai ho ga
+                    kio k isma p nai ha*/-->
+            </ul>
+
+
+            <p>this is 1st para graphs</p>
+        </div>
+
+        <!-- ya direct div k andar arah ha -->
+        <p>this is 2st para graphs</p>
+
+    </div>
+    <p>this is outer paragraph</p>
+</body>
+
+</html>

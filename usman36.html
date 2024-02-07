@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeyFrames and Animations</title>
+</head>
+<style>
+    .container {
+
+        background-color: aquamarine;
+        border: 2px solid black;
+    }
+
+    .box {
+
+        border: 1px solid red;
+        background-color: green;
+        width: 200px;
+        height: 200px;
+        position: relative;
+        animation-name: muawa1;
+        animation-duration: 10s;
+        /* animation-iteration-count:infinite; */
+        animation-iteration-count: 1;
+        /* animation-fill-mode: alternative;isee sa ak baar chal kar wapis akar ruk jae ga */
+        /* animation-fill-mode: forwards;yaha par ataka reh jae ga */
+        /* animation-timing-function: ease-in;shuru ma slow ho ga pir tez ho jae ga */
+        /* animation-timing-function: ease-out;shuru ma fast ho ga pir slow ho jae ga */
+        /* animation-timing-function: ease-in--out;shuru ma slow pir fast pir slow */
+        /* 3 s k bad chale ga */
+
+        /* animation-direction: reverse; */
+        /* animation-delay: 3s; */
+
+        /* easy way to select propertty */
+        /* animation: animation-name  animation duration animation timing function animation delay  */
+        /* animation iteration count animation fill mode */
+        animation: muawa1 5s ease-in 1s 12 backwords;
+
+    }
+
+    @keyframes muawa {
+        from {
+            width: 150px;
+        }
+
+        to {
+            width: 100%;
+        }
+    }
+
+    /* animation time 10s ha to us pa depend kare ga */
+    @keyframes muawa1 {
+        0% {
+            top: 0px;
+            left: 0px;
+        }
+
+        25% {
+            top: 200px;
+            left: 0px;
+
+        }
+
+        75% {
+            top: 200px;
+            left: 200px;
+        }
+
+        100% {
+            top: 0px;
+            left: 200px;
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+
+        <div class="box">
+            this is box
+        </div>
+    </div>
+</body>
+
+</html>

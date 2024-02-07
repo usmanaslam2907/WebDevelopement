@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Tutorial</title>
+</head>
+
+<body>
+
+    <div class="container">This is JSON Tutorial</div>
+    <script>
+        let JSONObject = {
+            name: "Usman", Degree: "BSSE", Friend: "Rafey", food: "Chicken"
+        }
+        console.log(JSONObject);
+
+
+        // Make string by object because we use strings to replace etx.
+        // Object to string
+        let Myjsonstring = JSON.stringify(JSONObject);
+        console.log(Myjsonstring);
+
+        // update string  
+        Myjsonstring = Myjsonstring.replace('Usman', 'muawa');
+        console.log(Myjsonstring);
+
+        // string to object
+        let jasonnewobject = JSON.parse(Myjsonstring);
+        console.log(jasonnewobject);
+
+        
+
+        // similary ham eshe bhot kuch ak dusre ma convert kar sakte like array to object wagera
+
+
+    </script>
+</body>
+
+</html>

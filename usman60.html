@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+
+<body>
+    <div class="container">
+        this is container
+    </div>
+
+
+    <!-- this is shortcut arrow function -->
+    <script>
+        // Arrow Function
+        letgreet = () => {
+            console.log("Good Morning");
+        }
+
+        // function greet()
+        // {
+        //     console.log("Good Morning");
+        // }
+        // greet();
+
+        // syntax is    let function=()=> a/b;
+        setTimeout(() => { console.log("Inside");}, 3000);
+
+// Elaxical This
+// this apne function ko point karta jis ma wo hota magr jab apna function na ho toh wo parent 
+// ka object access karta ha
+
+let object1={
+greeting:"Good Morning",
+names:["Usman","Nisar","Zeeshan","Rafey","Waqar"], speak()
+{
+    this.names.forEach((muawa)=>{
+        console.log(this.greeting+" Kuk Ruk "+muawa);
+    })
+}}
+object1.speak();
+
+
+
+   let divide=(a,b)=>a/b;
+let half=a=>a/2;
+
+
+        let sum=(a,b)=>
+        {
+            return a+b;
+        }
+
+        let minus=(a,b)=>{
+            return a-b;
+        }
+    </script>
+</body>
+
+</html>

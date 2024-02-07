@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Dates and Times</title>
+</head>
+
+<body>
+    <div class="container">
+        Current Time is  <span id="time"></span>
+    </div>
+    <script>
+        console.log("Tutorial of Dates and Times");
+        // let now=new Date();
+        // console.log(now);
+
+        let newdate1 = new Date("2021-08-30");
+        console.log(newdate1);
+
+        // let newdate2=new Date(year,month,date,hours,minutes,seconds,miliseconds);
+        let newdate2 = new Date(2021, 08, 30, 2, 34, 45, 45);
+        console.log(newdate2);
+
+        let yr = newdate2.getFullYear();
+        console.log("The year is: ", yr);
+        let dat = newdate2.getDate();
+        console.log("The Date is: ", dat);
+        let mn = newdate2.getMonth();
+        console.log("The Month is: ", mn);
+        let min = newdate2.getMinutes();
+        console.log("The Minutes is: ", min);
+
+
+
+        newdate2.setDate(6);
+        //  console.log(newdate2.getDate());
+
+        setInterval(updatetime, 1000);
+
+        function updatetime() {
+            time.innerHTML = new Date();
+        }
+
+
+    </script>
+</body>
+
+</html>

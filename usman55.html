@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+
+<body>
+
+    <div class="container">
+        this is a page of loops
+    </div>
+    <script>
+        console.log("This is java tutorial 55");
+        //   for (let i = 0; i <= 3; i++) 
+        //   {
+        //     console.log(i);
+        //   }
+
+        let friends = ["muawa", "wains", "ali", "haroon", "akbar", "zeeshan", "Nisar"];
+        // for (let i = 0; i < friends.length; i++)
+        //  {
+        //     console.log("hello friends "+friends[i]);
+        // }
+
+        //2nd method  For each loop
+        //    friends.forEach(function muawa(element){
+        //        console.log("Hello Friends "+ element);
+        //    })
+
+
+
+        //3rd method For of loop
+        //   for(element of friends)
+        //   {
+        //       console.log("Hello mY friend! How are you? "+element);
+        //   }
+
+
+
+        //    for object iteration
+        let object = {
+            name: "Usman", RegNo: "L1F19BSSE0153", Semester: 4, School: "UCP"
+        }
+     
+        for(key in object)
+        {
+            console.log(`${key} of student is ${object[key]}`);
+        }
+
+        let i=0;
+        while(true)
+        {
+            if(i==10)
+            {break;}
+            console.log(`${i} is less than 4`);
+            i++;
+        }
+
+    </script>
+</body>
+
+</html>

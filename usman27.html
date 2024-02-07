@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and Z-index</title>
+    <style>
+        .box {
+
+            width: 170px;
+            height: 170px;
+            border: 2px solid black;
+        }
+
+        #box1 {
+            /* Z- index ma ak box dusre pa ataa ha magr kaam nai karta 
+            kio k default position static hoti ha so pele postion change kare ghe */
+            
+            /* 1. z-index tab kaam kare ga jab ap na position ko
+            absolute , relative , fixed sticky kar raka ha */
+            /* 2. Jab ham relative karte haie koi box to wo nechey sa chup kar guzar ujata ha */
+            /*3. Jase ham na box 3 ko relative kia to box1 neechey sa guzar gia */
+            /* 4. position statice pa z-index kaam nai kare ga */
+            /* z-index jis ka bara ho ga wo uper ajae ga */
+            position: relative;
+            top: 49px;
+            background-color: green;
+            z-index:0;
+        }
+
+        #box2 {
+            /* default value of visibility is visible */
+            /* display none ma jo jgah hoti ha wo b katam ho jati ha:
+            will hide the element and the space   */
+            /* lekin jgah reserve le gi : 
+            will hide the element but will show empty space */
+
+            /* display:none;
+            visibility: hidden; */
+            background-color: red;
+            position: relative;
+            top: 14px;
+            z-index:0; /*check kar sakte haie kud ap live server ma jah kar*/
+
+        }
+
+        #box3 {
+            background-color: blue;
+            position: relative;
+        }
+
+        #box4 {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+
+</html>

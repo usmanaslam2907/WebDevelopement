@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Functions</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>My Name is Muhammad Usman Aslam Muawa Waisn from Lahore</h1>
+    </div>
+
+    <script>
+
+        // When we make own function Arrow Function
+        let play = () => {
+            console.log("Good Morning! Usman");
+        }
+        play();
+
+        // Examples
+        let sum = (a, b) => {
+            return a + b;
+        }
+        let minus = (a, b) => {
+            return a - b;
+        }
+        // More Shortcut Examples
+        let divide = (a, b) => a / b;
+        let double=a=>a*2;
+
+
+        // Another arrow Function who builten
+       setTimeout(()=>{console.log("Hi! Muawa");},3000)
+
+    //    Another also Function 
+    let object1={
+
+        names:["Usman","Zeeshan","Nisar","Rafey"],speak()
+        {
+            // this.names.forEach(()=>{})
+            this.names.forEach((muawa)=>{
+                console.log("By By "+muawa);
+            })
+        }
+    }
+    object1.speak();
+
+    
+// Elaxical This
+// this apne function ko point karta jis ma wo hota magr jab apna function na ho toh wo parent 
+// ka object access karta ha
+
+// let object1={
+// greeting:"Good Morning",
+// names:["Usman","Nisar","Zeeshan","Rafey","Waqar"], speak()
+// {
+//     this.names.forEach((muawa)=>{
+//         console.log(this.greeting+" Kuk Ruk "+muawa);
+//     })
+// }}
+// object1.speak();
+
+
+
+    </script>
+</body>
+
+</html>

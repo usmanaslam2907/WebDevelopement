@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables & custom Properties</title>
+    <style>
+        /* Make Global Variables who used everywhere */
+        :root{
+
+            /* mostly we used primary and secondary color */
+            /* --boxicolor:yellow; */
+            --primarycolor:green;
+            --secondarycolor:yellow;
+            --maxwidth:933px;
+        }
+        .box {
+
+            /* variable decrare ya bas scope ka andar kaam hi kare ga */
+            /* --boxicolor: rgb(182, 247, 4); */
+            width: 200px;
+            height: 200px;
+            background-color: var(--primarycolor);
+            border: 2px solid red;
+            box-shadow: 3px 3px var(--secondarycolor);
+            margin: 10px 10px;
+        }
+
+        .container {
+            background-color: var(--primarycolor);
+            border: 2px solid black;
+            margin:auto;
+            /* width:900px; */
+            height:500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: var(--maxwidth);
+          
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>

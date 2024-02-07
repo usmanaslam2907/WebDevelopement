@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Settime and ClearTime</title>
+</head>
+
+<body>
+    <h1>Muawa is back vey soon in karachi</h1>
+    <div class="container">
+      Time now is <span id="time"></span>
+    </div>
+    <script>
+
+        console.log("This tutorial of time set and clear");
+
+        // Settimeout -- > allows us to run  function after the interval of time
+        // ClearTimeout-->Allows us to  run function repeatedly after the interval of time
+
+        function greet(name , byetext)
+        {
+            console.log("Hello Muawa! Good Morning "+name + " "+byetext);
+        }
+        //  Jab ap ak website ka article parte haie to wo 10s k baad pouchta ha sign in karna ha?
+        // magr ap ka schedule kia howa time sa pele wo sign up kar deh to ap ka schedule bikaar ha
+        // to is soorat ma ap time ko clear time out kar deh gein
+        let timeout=setTimeout(greet,5000,"Usman","TakeCare");
+        // console.log(timeout);
+
+        // so clear out it
+        clearTimeout(timeout);
+
+        // har ak seconds ma ahe ga setinterval ma
+        // setInterval(greet,1000,"Usman","Good Night");
+
+
+        // better syntX
+        Intervalbreak=setInterval(greet,1000,"Usman","Good Night");
+        console.log(Intervalbreak);
+        clearInterval(Intervalbreak);
+
+        // Make Clock
+        function displaytime()
+        {
+            time=new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML=time;
+
+        }
+        setInterval(displaytime,1000);
+    </script>
+</body>
+
+</html>

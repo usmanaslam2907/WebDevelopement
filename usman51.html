@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope and Conditions</title>
+</head>
+
+<body>
+
+    <!-- div>ul>li{items-$}*7 -->
+    <div>
+        <ul>
+            <li>items-1</li>
+            <li>items-2</li>
+            <li>items-3</li>
+            <li>items-4</li>
+            <li>items-5</li>
+            <li>items-6</li>
+            <li>items-7</li>
+        </ul>
+    </div>
+    <script>
+        // var string = "This is a String";
+        // var string = "This is a String1";
+        // console.log(string);
+
+        //   is ka scope block level ka hota ha
+        // let a="u";   ya grobel ma decrare kia ha
+
+        {
+            //   let a="u6"; 
+            // console.log(a);
+            // this is block idar same decrare karo geh to farq nai pare ga mag
+            // groble ma same decrare karo geh to error ahe ga
+
+        }
+
+        // const a="this is not changed";
+        // a="this is changed";
+        // console.log(a);
+
+        // Conditional
+        //     let age = 2;
+        //   if(age>=21)
+        //   {
+        //       console.log('You eat icecream');
+        //   }
+        //   else if(age==2)
+        //   {
+        //       console.log("Age is 2");
+        //   }
+        //   else{
+        //       console.log('You dont eat icecream');
+        //   }
+        const cups = 42;
+        switch (cups)
+         {
+            case 45:
+                console.log("45");
+                break;
+            case 44:
+                console.log("44");
+                break;
+            case 43:
+                console.log("43");
+                break;
+            case 42:
+                console.log("42");
+                break;
+
+            default:
+                console.log("none");
+                break;
+        }
+    </script>
+</body>
+
+</html>

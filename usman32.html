@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributes and Nth child pseduo selectors</title>
+    <style>
+        .container {
+            /* remember: there are three points to center element */
+            display: block;
+            width: 233px;
+            /*jab center karte haie to width kam karte haie*/
+            margin: auto;
+            border: 2px solid black;
+            text-align: center;
+        }
+
+        input {
+            display: block;
+        }
+
+        /* ap na like kisi input ka andar isee ko acces karna ha toh
+        i.e text to acces karna ha toh  */
+        input[type="text"]
+        {
+            padding:2px;
+            border:1px solid red;;
+        }
+        input[type="email"]
+        {
+            padding:2px;
+            
+            border:1px solid rgb(17, 17, 17);;
+        }
+        /* h1>a{
+            text-decoration: none;
+            color:green;
+            
+        } */
+        /* there are pseudo selectors */
+        a[target]
+        {
+            font-size:10px;
+            text-decoration: none;
+            color:green;
+        }
+        a[target="_self"]
+        {
+           
+            font-size:10px;
+            text-decoration: none;
+            color:rgb(50, 21, 214);
+        }
+        
+
+        /* Nth child  link list ma jo item numb do geh wo colorful ho jae gi*/
+        /* li:nth-child(2)
+        {
+            color:red;
+        }
+        li:nth-child(4)
+        {
+            color:red;
+        } */
+        /* agr ak chord kar dusra red karna sare ho toh like ise 1 */
+        /* li:nth-child(2n+0) /*isma 0 ka matlab 0 sa counting start kare ga
+        {
+            color:red;
+        } */
+        li:nth-child(2n+1)/*iska matlab wo 1 sa red karna shuru ho ga 2(0)+1=1 red kare ga*/
+        {
+            color:red;
+        }
+
+        /* li:nth-child(odd)/*all odd items change color
+        {
+            background-color: burlywood;
+        } */
+        li:nth-child(even)/*all even items change color*/
+        {
+            background-color: burlywood;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1><a href="http://google.com" target="_blank">Go to Google</a></h1>
+        <h1><a href="http://facebook.com" target="_self">Go to Facebook</a></h1>
+        <form action="" class="form-control">
+            <input type="text" placeholder="Enter Your Name">
+            <input type="password" placeholder="Enter Your Password">
+            <input type="email" placeholder="Enter Your E-mail">
+            <input type="submit" value="Submit">
+        </form>
+        <ul>
+            <li class="items" id="item1">Items-1</li>
+            <li class="items" id="item2">Items-2</li>
+            <li class="items" id="item3">Items-3</li>
+            <li class="items" id="item4">Items-4</li>
+            <li class="items" id="item4">Items-4</li>
+            <li class="items" id="item4">Items-5</li>
+        </ul>
+    </div>
+</body>
+
+</html>

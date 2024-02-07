@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float and clear</title>
+    <style>
+        .MainHeading {
+            margin-left: 280px;
+            /* margin:auto; */
+            width:755px;
+            color: red;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #ff00a596;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .container {
+            border: 5px solid rgb(171, 30, 236);
+            margin: auto;
+            width: 1000px;
+            margin-top: 100px;
+            padding-top: 30px;
+            background-color: #bdf189;
+        }
+
+        .items {
+            border: 2px solid rgb(123, 7, 255);
+            margin: 10px 3px;
+            background-color: #efeae4;
+
+
+        }
+
+        #fruits {
+            float: right;
+            width: 49%;
+        }
+
+        #computer {
+            float: left;
+            width: 49%;
+        }
+
+        #stationary {
+            /* clear:right; */
+            clear: both;
+            width: 100%;
+        }
+        p{
+            /* text-align: left; */
+            /* text-align: right; */
+            /* text-align: center; */
+            text-align:justify;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div>
+            <h1 class="MainHeading">Welcome to Muawa Store</h1>
+        </div>
+
+        <div id="fruits" class="items">
+            <h3>Fruits</h3>
+            <p id="fruitspara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut aspernatur quos provident doloribus ab
+                tempora ipsa perspiciatis, molestiae enim, modi odio quo similique ea repellendus nostrum laborum, illo
+                ut dolores animi temporibus voluptas distinctio numquam? Maxime quis vel quam optio!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ipsum exercitationem ullam suscipit
+                delectus? Quod inventore sint laudantium nam consequuntur!</p>
+        </div>
+        <div id="computer" class="items">
+            <h3>computer</h3>
+            <p id="computerpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, vitae
+                distinctio velit atque minima, dolore consequuntur, voluptatem tempore quae quis iure. Iste natus
+                eveniet nobis unde impedit commodi nostrum id.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut aspernatur quos provident doloribus ab
+                tempora ipsa perspiciatis, molestiae enim, modi odio quo similique ea repellendus nostrum laborum, illo
+                ut dolores animi temporibus voluptas distinctio numquam? Maxime quis vel quam optio!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus accusantium quae ipsa cum, nulla
+                incidunt eaque impedit fugit quidem.</p>
+        </div>
+        <div id="stationary" class="items">
+            <h3>stationary</h3>
+            <p id="stationarypara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut aspernatur quos provident doloribus ab
+                tempora ipsa perspiciatis, molestiae enim, modi odio quo similique ea repellendus nostrum laborum, illo
+                ut dolores animi temporibus voluptas distinctio numquam? Maxime quis vel quam optio!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil voluptate voluptas natus laboriosam ex
+                inventore esse qui numquam ea nisi!</p>
+        </div>
+        <div id="glasses" class="items">
+            <h3>stationary</h3>
+            <p id="glassespara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut aspernatur quos provident doloribus ab
+                tempora ipsa perspiciatis, molestiae enim, modi odio quo similique ea repellendus nostrum laborum, illo
+                ut dolores animi temporibus voluptas distinctio numquam? Maxime quis vel quam optio!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil voluptate voluptas natus laboriosam ex
+                inventore esse qui numquam ea nisi!</p>
+        </div>
+
+
+    </div>
+    </div>
+
+</body>
+
+</html>
